@@ -1,4 +1,0 @@
-repository "Pawtastic v2/Pawtastic v2@7971553996041@cloud"
-  path "/"
-    br "/main"
-    co "/main"
