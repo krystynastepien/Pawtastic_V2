@@ -1,0 +1,100 @@
+Folder PATH listing for volume Nowy
+Volume serial number is CC4E-AD3F
+D:.
+-   folder_structure.txt
+-   Managers.meta
+-   MapBehavior.meta
+-   Player.meta
+-   ScriptableObjects.meta
+-   StateMachine.meta
+-   UI.meta
+-   Utils.meta
+-   
++¦¦¦Managers
+-       AnimationManager.cs
+-       AnimationManager.cs.meta
+-       GameManager.cs
+-       GameManager.cs.meta
+-       HUDManager.cs
+-       HUDManager.cs.meta
+-       PlayerManager.cs
+-       PlayerManager.cs.meta
+-       _GameFlow.cs
+-       _GameFlow.cs.meta
+-       
++¦¦¦MapBehavior
+-       ElevationEntry.cs
+-       ElevationEntry.cs.meta
+-       ElevationExit.cs
+-       ElevationExit.cs.meta
+-       WaterBehavior.cs
+-       WaterBehavior.cs.meta
+-       
++¦¦¦Player
+-       PlayerActions.cs
+-       PlayerActions.cs.meta
+-       PlayerCollisions.cs
+-       PlayerCollisions.cs.meta
+-       PlayerHealthController.cs
+-       PlayerHealthController.cs.meta
+-       PlayerStats.cs
+-       PlayerStats.cs.meta
+-       
++¦¦¦ScriptableObjects
+-       ItemData.cs
+-       ItemData.cs.meta
+-       
++¦¦¦StateMachine
+-   -   PlayerMovementState.meta
+-   -   
+-   L¦¦¦PlayerMovementState
+-           PlayerIdleState.cs
+-           PlayerIdleState.cs.meta
+-           PlayerMovementBaseState.cs
+-           PlayerMovementBaseState.cs.meta
+-           PlayerMovementStateManager.cs
+-           PlayerMovementStateManager.cs.meta
+-           PlayerRunningState.cs
+-           PlayerRunningState.cs.meta
+-           
++¦¦¦UI
+-   -   HealthBar.meta
+-   -   Inventory.meta
+-   -   
+-   +¦¦¦HealthBar
+-   -       HealthBarController.cs
+-   -       HealthBarController.cs.meta
+-   -       
+-   L¦¦¦Inventory
+-           InventoryController.cs
+-           InventoryController.cs.meta
+-           InventoryItemDescription.cs
+-           InventoryItemDescription.cs.meta
+-           InventoryItemSlot.cs
+-           InventoryItemSlot.cs.meta
+-           
+L¦¦¦Utils
+    -   Constants.cs
+    -   Constants.cs.meta
+    -   CreatureStats.cs
+    -   CreatureStats.cs.meta
+    -   DraggableItem.cs
+    -   DraggableItem.cs.meta
+    -   Enums.cs
+    -   Enums.cs.meta
+    -   IDamageable.cs
+    -   IDamageable.cs.meta
+    -   IManager.cs
+    -   IManager.cs.meta
+    -   Logger.meta
+    -   Singleton.cs
+    -   Singleton.cs.meta
+    -   SpriteGrabber.cs
+    -   SpriteGrabber.cs.meta
+    -   
+    L¦¦¦Logger
+            GameLogger.cs
+            GameLogger.cs.meta
+            LoggerConfig.cs
+            LoggerConfig.cs.meta
+            
