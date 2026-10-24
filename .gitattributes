@@ -1,0 +1,7 @@
+# Szyfruj absolutnie wszystko wewnątrz folderu z Obsidianem (notatki, obrazy, ustawienia)
+KS_Obsidian/** filter=git-crypt diff=git-crypt
+
+# WAŻNE ZABEZPIECZENIE: pliki konfiguracyjne gita MUSZĄ pozostać jawne, inaczej git-crypt przestanie działać!
+.gitattributes !filter !diff
+.gitignore !filter !diff
+git-crypt.exe !filter !diff

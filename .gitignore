@@ -114,3 +114,5 @@ ignore.conf
 
 # Ustawienia edytora VS Code (opcjonalnie, usuń tę sekcję, jeśli chcesz je współdzielić)
 .vscode/
+git-crypt.exe
+Backup-2026_10_24-01_24_35.zip
