@@ -116,3 +116,5 @@ ignore.conf
 .vscode/
 git-crypt.exe
 Backup-2026_10_24-01_24_35.zip
+.obsidian/
+KS_Obsidian/.obsidian
