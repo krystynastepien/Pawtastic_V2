@@ -1,4 +1,4 @@
-using System;
+
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering;
@@ -15,21 +15,9 @@ public class PlayerActions : MonoBehaviour
         
 
     private Rigidbody2D _rigidBody; 
-    
-    private Vector2 _moveInput;
 
-    public Vector2 MoveInput   
-    {
-        get { 
-            _moveInput.Normalize();
-             return _moveInput; 
-        }   
-        private set { 
-            _moveInput = value; 
-        }  
-    }
+    public Vector2 MoveInput { get; private set; }
 
-    //public Vector2 MoveInput {get; private set;}
     public void OnStart()
     {
         _rigidBody = GetComponent<Rigidbody2D>();
@@ -53,8 +41,8 @@ public class PlayerActions : MonoBehaviour
     /// <param name="context">collects input from the unity input system action callback</param>
     public void GetMoveInput(InputAction.CallbackContext context) 
     {
-        MoveInput = context.ReadValue<Vector2>();
-
+        // MoveInput = context.ReadValue<Vector2>();   brak normalizacji
+        MoveInput = Vector2.ClampMagnitude(context.ReadValue<Vector2>(), 1f);   // normalizacja - ClampMagnitude(vector, float) - skróć długość vektora do podanej wartości
     }
 
     #endregion

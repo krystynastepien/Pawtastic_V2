@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class InventoryController : MonoBehaviour
@@ -12,7 +11,7 @@ public class InventoryController : MonoBehaviour
     #region Serialized Fields
     [SerializeField] private InventoryItemSlot _itemPrefab;
     [SerializeField] private RectTransform _contentPanel;
-    [SerializeField] private InventoryItemDescription _descriptionPanel;
+   // [SerializeField] private InventoryItemDescription _descriptionPanel;
 
     [SerializeField] private List<ItemData> _TEST_inventoryItems = new List<ItemData>(4);
 
@@ -56,7 +55,7 @@ public class InventoryController : MonoBehaviour
     public void OnHide()
     {
         _inventoryCanvas.SetActive(false);
-        _descriptionPanel.ClearDescription();
+        //_descriptionPanel.ClearDescription();
         _isVisible = false;
     }
 
@@ -85,7 +84,7 @@ public class InventoryController : MonoBehaviour
            InventoryItemSlot newSlot = CreateItemSlot();
            _inventoryItems.Add(newSlot);
         }
-        _descriptionPanel.OnInit();
+        //_descriptionPanel.OnInit();
     
     }
 
@@ -129,8 +128,8 @@ public class InventoryController : MonoBehaviour
     {
         slot.Select();
         var data = slot.GetItemData();
-        if (data != null)
-            _descriptionPanel.SetDescription(data);
+       // if (data != null)
+           // _descriptionPanel.SetDescription(data);
         GameLogger.Log("Selected: " + slot.name, LoggerConfig.LogCategoryFlags.UI, slot);
     }
 

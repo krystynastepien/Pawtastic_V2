@@ -1,7 +1,5 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.Rendering;
-using UnityEngine.Timeline;
 
 public abstract class CreatureStats : MonoBehaviour, IDamageable
 {
@@ -83,7 +81,7 @@ public abstract class CreatureStats : MonoBehaviour, IDamageable
     /// </summary>
     /// <param name="damage"></param>
     public void Heal(int healVal){
-        _maxHealth = _maxHealth + healVal;
+        _currentHealth = _currentHealth + healVal;
         if(_currentHealth > _maxHealth)
         {
             _currentHealth = _maxHealth;

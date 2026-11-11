@@ -1,4 +1,3 @@
-using UnityEngine;
 
 public class AnimationManager : Singleton<AnimationManager>, IManager
 {
